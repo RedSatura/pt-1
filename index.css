@@ -1,0 +1,206 @@
+body {
+	background-color: #fff;
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 10vh;
+	padding: 30px;
+}
+
+.header-link {
+	color: #A0A0AF;
+	text-decoration: none;
+	font-size: 2rem;
+	font-weight: 400;
+	margin: 20px;
+}
+
+.header-link:hover {
+	text-decoration: underline;
+}
+
+.mission-vision-info {
+	color: white;
+	padding: 30px;
+	background-color: #262460e6;
+}
+
+.mission-vision-container {
+	display: grid;
+	padding: 0px 20px 20px 0px;
+	grid-template-rows: auto auto;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+.graduate-attributes-info {
+	color: #0F2D45;
+	padding: 30px;
+	background-color: #FFFFFF;
+}
+
+.programs-info {
+	background-color: #18476E;
+	padding: 30px;
+	color: white;
+}
+
+.school-name {
+	display: flex;
+	justify-content: center;
+	padding: 30px;
+}
+
+.discounts-info {
+	background-color: #DBDBDB;
+	padding: 30px;
+	color: #0F2D45;
+}
+
+#header-logo {
+	width: 120px;
+	height: auto;
+}
+
+#mission-title {
+	grid-column: 1;
+}
+
+#vision-title {
+	grid-column: 2;
+}
+
+.mission {
+	grid-row: 2;
+	text-indent: 20px;
+	margin-right: 7px;
+	font-size: 1.5em;
+}
+
+.vision {
+	grid-row: 2;
+	text-indent: 20px;
+	margin-right: 70px;
+	font-size: 1.5em;
+}
+
+.school-name {
+	background-image: url("images/title-background.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 500px;
+	display: flex;
+	align-items: center;
+	color: white;
+	font-size: 2rem;
+}
+
+.graduate-attributes {
+	font-size: 2rem;
+}
+
+.graduate-attributes > li {
+	margin: 10px;
+}
+
+.footer {
+	padding: 30px;
+	background-color: #216296;
+	color: white;
+	text-align: center;}
+
+hr {
+	border: 2px solid white;
+}
+
+.program-list {
+	list-style-type: none;
+}
+
+.program-list > li {
+	font-size: 2rem;
+	padding: 10px;
+}
+
+i {
+	margin: 10px;
+}
+
+.program-list > ul > li {
+	list-style-type: none;
+	font-size: 2rem;
+	padding: 10px;
+}
+
+.contact {
+	text-align: left;
+	width: 50%;
+}
+
+.contact-container {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+input[type=text] {
+	background-color: #216296;
+	border: none;
+	color: white;
+}
+
+input[type=textarea] {
+	background-color: #216296;
+	border: none;
+}
+
+input[type=text]:focus {
+	outline: none;
+}
+
+input[type=textarea]:focus {
+	outline: none;
+}
+
+.discount-list {
+	padding: 30px;
+}
+
+.discount-list > li {
+	list-style-type: none;
+	font-size: 2rem;
+	padding: 10px;
+}
+
+#submit-button {
+	background-color: white;
+	border: none;
+	width: 100px;
+	height: 30px;
+	border-radius: 5px;
+}
+
+@media (min-width: 319px) and (max-width: 480px) {
+	.link-container {
+		display: none;
+	}
+	
+	#header-logo {
+		width: 100px;
+	}
+	
+	.mission-vision-container {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.vision {
+		margin-right: 0px;
+	}
+}
