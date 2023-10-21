@@ -15,9 +15,9 @@ body {
 .header-link {
 	color: #A0A0AF;
 	text-decoration: none;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	font-weight: 400;
-	margin: 20px;
+	margin: 10px;
 }
 
 .header-link:hover {
@@ -155,16 +155,20 @@ input[type=text] {
 	color: white;
 }
 
-input[type=textarea] {
+textarea {
+	color: white;
 	background-color: #216296;
-	border: none;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 5px solid white;
 }
 
 input[type=text]:focus {
 	outline: none;
 }
 
-input[type=textarea]:focus {
+textarea:focus {
 	outline: none;
 }
 
@@ -184,9 +188,18 @@ input[type=textarea]:focus {
 	width: 100px;
 	height: 30px;
 	border-radius: 5px;
+	margin-top: 20px;
+	font-weight: bold;
+	color: #216296;
 }
 
-@media (min-width: 319px) and (max-width: 480px) {
+#submit-button:hover, #submit-button:focus {
+	background-color: #216296;
+	color: white;
+	border: 1px solid white;
+}
+
+@media (max-width: 480px) {
 	.link-container {
 		display: none;
 	}
@@ -195,12 +208,20 @@ input[type=textarea]:focus {
 		width: 100px;
 	}
 	
+	.vision {
+		margin-right: 0px;
+	}
+}
+
+@media (max-width: 700px) {
 	.mission-vision-container {
 		display: flex;
 		flex-direction: column;
 	}
-	
-	.vision {
-		margin-right: 0px;
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+	.link-container {
+		display: none;
 	}
 }
